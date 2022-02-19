@@ -12,9 +12,5 @@ jobs:
       - run: 
           name: mvn build package running 
           command: mvn clean package
-      - restore_cache:
-          key: dependency-cache-{{ checksum "maven-build-artifacts" }}
-      - save_cache:
-          key: dependency-cache-{{ checksum "maven-build-artifacts" }}
-          paths:
-            - ~/repo
+      - store_artifacts:
+          path: ~/repo/artifacts
