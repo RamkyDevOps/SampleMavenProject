@@ -17,3 +17,9 @@ jobs:
           destination: artifact-file
       - store_artifacts:
           path: ~/repo/artifacts
+          
+    
+workflows:
+  my-pipeline:
+    jobs:
+      - build
