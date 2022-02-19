@@ -17,4 +17,4 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "maven-build-artifacts" }}
           paths:
-            - ./~
+            - ~/repo
