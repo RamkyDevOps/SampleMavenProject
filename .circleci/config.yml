@@ -9,4 +9,6 @@ jobs:
     
     steps:
       - checkout
-      - run: mvn package
+      - run: 
+          name: mvn build package running 
+          command: mvn clean package
