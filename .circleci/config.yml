@@ -14,3 +14,6 @@ jobs:
           command: mvn clean package
       - store_artifacts:
           path: ~/repo/artifacts
+          destination: artifact-file
+      - store_artifacts:
+          path: ~/repo/artifacts
